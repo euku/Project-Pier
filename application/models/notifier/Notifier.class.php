@@ -138,12 +138,21 @@
       foreach($people as $user) {
         $recipients[] = self::prepareEmailAddress($user->getEmail(), $user->getDisplayName());
       } // foreach
-      return self::sendEmail(
-        $recipients,
-        self::prepareEmailAddress($task->getCreatedBy()->getEmail(), $task->getCreatedByDisplayName()),
-        $task->getProject()->getName() . ' - ' . lang('complete task') . ' - ' . $task->getObjectName(),
-        tpl_fetch(get_template_path('complete_task', 'notifier'))
-      ); // send
+      if ($task->getCreatedBy()) {
+        return self::sendEmail(
+          $recipients,
+          self::prepareEmailAddress($task->getCreatedBy()->getEmail(), $task->getCreatedByDisplayName()),
+          $task->getProject()->getName() . ' - ' . lang('success complete task') . ' - ' . $task->getObjectName(),
+          tpl_fetch(get_template_path('complete_task', 'notifier'))
+        ); // send
+      } else {
+        return self::sendEmail(
+          $recipients,
+          self::prepareEmailAddress("no-reply@sc-hansa.de", "No Reply"),
+          $task->getProject()->getName() . ' - ' . lang('success complete task') . ' - ' . $task->getObjectName(),
+          tpl_fetch(get_template_path('complete_task', 'notifier'))
+        ); // send
+      }
     } // newTask
   
     /**
