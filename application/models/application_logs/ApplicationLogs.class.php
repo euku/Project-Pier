@@ -151,13 +151,13 @@
     * @return array
     */
     static function filterLogs($all_logs) {
-      trace(__FILE__,"filterLogs({$all_logs})");
+      trace(__FILE__,'filterLogs({$all_logs})');
       if ($all_logs==NULL) return;
       $filtered_logs = array();
       //Only show logs related to installed applications
       foreach ($all_logs as $log)
       {
-        trace(__FILE__,"filterLogs($all_logs) - foreach ");
+        trace(__FILE__,'filterLogs($all_logs) - foreach ');
         //if ($log->getObject()==NULL) continue;
         $manager_class_name = $log->getRelObjectManager();
         //Search the string 'plugins' in the file path containing the class, if false is a core application else is a plugin
@@ -165,13 +165,13 @@
         if (strpos($GLOBALS['autoloader_classes'][strtoupper($manager_class_name)], 'plugins') == false)
         //if (strpos($GLOBALS['autoloader_classes'][strtoupper(get_class($log->getObject()))], 'plugins') == false)
         {
-          trace(__FILE__,"filterLogs($all_logs) - core ".$manager_class_name);
+          trace(__FILE__,'filterLogs($all_logs) - core '.$manager_class_name);
           //the class is a core application 
           $filtered_logs[]=$log;
         }
         else 
         {
-          trace(__FILE__,"filterLogs($all_logs) - plugin: ".$manager_class_name);
+          trace(__FILE__,'filterLogs($all_logs) - plugin: '.$manager_class_name);
           //TODO
           //the class comes from a plugin
           //so we need to filter logs from uninstalled plugins

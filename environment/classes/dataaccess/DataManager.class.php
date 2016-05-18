@@ -249,7 +249,7 @@
     * @return object
     */
     function findById($id, $force_reload = false) {
-      trace(__FILE__,"findById($id, $force_reload)");
+      trace(__FILE__,'findById($id, $force_reload)');
       return $this->load($id, $force_reload);
     } // findById
     
@@ -339,13 +339,13 @@
     * @return DataObject
     */
     function load($id, $force_reload = false) {
-      trace(__FILE__,"load($id, $force_reload)");    
+      trace(__FILE__,'load($id, $force_reload)');    
       // Is manager ready to do the job?
       if (!$this->isReady()) {
         return null;
       } // if
 
-      trace(__FILE__,"cache check");    
+      trace(__FILE__,'cache check');    
       // If caching and we dont need to reload check the cache...
       if (!$force_reload && $this->getCaching()) {
         $item = $this->getCachedItem($id);
@@ -387,13 +387,13 @@
     * @return array
     */
     function loadRow($id) {
-      trace(__FILE__,"loadRow($id)");   
+      trace(__FILE__,'loadRow($id)');   
       $sql = sprintf("SELECT %s FROM %s WHERE %s", 
         implode(', ', $this->getLoadColumns(true)), 
         $this->getTableName(true), 
         $this->getConditionsById($id)
       ); // sprintf
-      trace(__FILE__,"loadRow($id) sql=$sql");   
+      trace(__FILE__,'loadRow($id),sql=$sql');   
       
       return DB::executeOne($sql);
     } // loadRow
@@ -406,7 +406,7 @@
     * @return DataObject
     */
     function loadFromRow($row) {
-      trace(__FILE__,"loadFromRow(row):begin");   
+      trace(__FILE__,'loadFromRow(row):begin');   
     
       // Is manager ready?
       if (!$this->isReady()) {
