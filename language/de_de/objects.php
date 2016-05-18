@@ -1,0 +1,76 @@
+<?php
+
+  return array(
+  
+    // Objects
+    'user' => 'Nutzer',
+    'users' => 'Nutzer',
+    'contact' => 'Kontakt',
+    'contacts' => 'Kontakte',
+    'member' => 'Mitglied',
+    'members' => 'Mitglieder',
+    'company' => 'Firma',
+    'companies' => 'Firmen',
+    'client' => 'Kunde',
+    'clients' => 'Kunden',
+    'package' => 'Package',
+    'project' => 'Projekt',
+    'projects' => 'Projekte',
+    'message' => 'Nachricht',
+    'messages' => 'Nachrichten',
+    'comment' => 'Kommentar',
+    'comments' => 'Kommentare',
+    'status update' => 'Status-Update',
+    'status updates' => 'Status-Updates',
+    'milestone' => 'Meilenstein',
+    'milestones' => 'Meilensteine',
+    'user account' => 'Konto',
+    'task' => 'Aufgabe',
+    'tasks' => 'Augaben',
+    'task list' => 'Aufgabenliste',
+    'task lists' => 'Aufgabenlisten',
+    'message subscribers' => 'Abonnent',
+    'configuration category' => 'Konfigurationskategorie',
+    'configuration categories' => 'Konfigurationskategorien',
+    'text snippet' => 'Text-Snippet',
+    'text snippets' => 'Text-Snippets',
+    'new company' => 'Neue Firma',
+    'existing company' => 'Exestierende Firma',
+    'memo' => 'Meine Projektnotizen',
+    'no folders' => 'Keine Ordner',
+    
+    // Variations
+    'owner company' => 'Besitzer-Firma',
+    'favorite company' => 'Lieblingsfirma',
+    'favorite companies' => 'Lieblingsfirmen',
+    
+    'open milestone' => 'Offener Meilenstein',
+    'open milestones' => 'Offene Meilensteine',
+    'completed milestone' => 'Geschlossner Meilenstein',
+    'completed milestones' => 'Geschlossne Meilensteine',
+    'late milestones' => 'Geschlossene Meilensteine',
+    'today milestones' => 'Heutige Meilensteine',
+    'upcoming milestones' => 'Nähste Meilensteine',
+    'completed task list' => 'Beendete Aufgabenliste',
+    'completed task lists' => 'Beendete Aufgabenlisten',
+    'open task list' => 'Offene Aufgabenliste',
+    'open task lists' => 'Offene Aufgabenlisten',
+    'active project' => 'Aktives Projekt',
+    'active projects' => 'Aktive Projekte',
+    'finished project' => 'Beendetes Projekt',
+    'finished projects' => 'Beendete Projekte',
+    'deleted or unknown' => '***Gelöscht oder unbekannt***',
+    
+    'important message'  => 'Wichtige Nachricht',
+    'important messages' => 'Wichtige Nachrichten',
+    
+    'private message' => 'Private Nachricht',
+    'private milestone' => 'Private Nachrichten',
+    'private time' => 'Private Zeit',
+    'private task list' => 'Private Aufgabenlsite',
+    'private comment' => 'Privater Kommentar',  
+
+    'actions' => 'Aktionen',
+  ); // array
+
+?>
