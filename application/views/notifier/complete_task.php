@@ -16,7 +16,7 @@ if ((!defined('SHOW_MESSAGE_BODY')) or (SHOW_MESSAGE_BODY == true)) {
 }
 ?>
 
-<?php echo lang('view completed task') ?>:
+<?php echo lang('success complete task') ?>:
 
 - <?php echo str_replace('&amp;', '&', externalUrl($task->getViewUrl())) ?> 
 
