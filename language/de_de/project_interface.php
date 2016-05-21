@@ -7,6 +7,7 @@
   
     'recent activities feed' => 'Letzte Aktivitäten',
     'recent activities' => 'Letzte Aktivitäten',
+	'show application log noise' => 'Zeige Eregnisse',
     'search button caption' => 'Los',
     'search result description' => 'Zeige <strong>%s von %s</strong> Objekten, auf die <strong>„%s“</strong> zutrifft',
     
