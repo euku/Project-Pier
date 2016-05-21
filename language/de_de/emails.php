@@ -34,6 +34,7 @@
     'view assigned milestones' => 'Zeige Meilenstein',
 
     'task assigned' => 'Aufgabe "%s" wurde dir zugewiesen',
+    'task completed' => 'Aufgabe "%s" erledigt',
     
   ); // array
 

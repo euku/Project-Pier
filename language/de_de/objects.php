@@ -26,7 +26,7 @@
     'milestones' => 'Meilensteine',
     'user account' => 'Konto',
     'task' => 'Aufgabe',
-    'tasks' => 'Augaben',
+    'tasks' => 'Aufgaben',
     'task list' => 'Aufgabenliste',
     'task lists' => 'Aufgabenlisten',
     'message subscribers' => 'Abonnent',

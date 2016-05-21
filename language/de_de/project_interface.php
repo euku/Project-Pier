@@ -7,6 +7,7 @@
   
     'recent activities feed' => 'Letzte Aktivitäten',
     'recent activities' => 'Letzte Aktivitäten',
+	'show application log noise' => 'Zeige Eregnisse',
     'search button caption' => 'Los',
     'search result description' => 'Zeige <strong>%s von %s</strong> Objekten, auf die <strong>„%s“</strong> zutrifft',
     
@@ -19,8 +20,8 @@
   
     'completed task' => 'Erledigte Aufgabe',
     'completed tasks' => 'Erledigte Aufgaben',
-    'open task' => 'Offene Aufgabe',
-    'open tasks' => 'Offene Aufgaben',
+    'open task' => 'Öffne Aufgabe wieder',
+    'open tasks' => 'Öffne Aufgaben wieder',
     'view all completed tasks' => 'Alle erledigten Aufgaben (insgesamt %s)',
     'recently completed tasks' => 'Vor kurzem erledigte Aufgaben',
     'task open of total tasks' => '%s offene von %s Aufgabe(n) in der Liste',
