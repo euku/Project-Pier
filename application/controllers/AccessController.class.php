@@ -85,11 +85,11 @@
         try {
           $username = array_var($login_data, 'username');
           $remember = array_var($login_data, 'remember') == 'checked';
-          trace(__FILE__,"login() - logUserIn($username, $remember)");
+          trace(__FILE__,'login() - logUserIn($username, $remember)');
           CompanyWebsite::instance()->logUserIn($user, $remember);
           if (isset($_POST['loginLanguage'])) $_SESSION['language'] = $_POST['loginLanguage'];
         } catch(Exception $e) {
-          trace(__FILE__,"login() - exception " . $e->getTraceAsString() );
+          trace(__FILE__,'login() - exception ' . $e->getTraceAsString() );
           tpl_assign('error', new Error(lang('invalid login data')));
           $this->render();
         } // try
@@ -117,7 +117,7 @@
           $ref_params = null;
         }
         if ($ref_controller && $ref_action) {
-          trace(__FILE__, "login() - redirectTo($ref_controller, $ref_action, $ref_params)" );
+          trace(__FILE__, 'login() - redirectTo($ref_controller, $ref_action, $ref_params)' );
           $this->redirectTo($ref_controller, $ref_action, $ref_params);
         } else {
           trace(__FILE__, 'login() - redirectTo(dashboard)' );
