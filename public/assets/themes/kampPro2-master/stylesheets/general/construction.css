@@ -46,6 +46,12 @@ body {
   text-decoration: underline;
 }
 
+#header h2 {
+  margin-left: 10px;
+  margin-top: 27px;
+  float: left;
+}
+
 #systemNoticesWrapper {
   background: red;
   color: white;
@@ -745,4 +751,16 @@ div.private {
 
 div.private span {
   display: none;
+}
+
+.stickyHeader {
+  background-color: #eee;
+  border-bottom: 1px dotted;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 !important;
+  transition: all 0.5s ease;
+  z-index: 1000;
 }

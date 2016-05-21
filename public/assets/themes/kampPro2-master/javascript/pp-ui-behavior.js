@@ -109,3 +109,11 @@ function post (url, d){
   $.ajaxSetup({url:url,global:false,async:false,type:"POST"});
   $.ajax({data: postdata});
 }
+
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 100) {
+		$('#crumbs').addClass("stickyHeader");
+	} else {
+		$('#crumbs').removeClass("stickyHeader");
+	}
+});
